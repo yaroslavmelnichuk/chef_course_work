@@ -1,5 +1,4 @@
-pt-get update -y -qq > /dev/null
-apt-get upgrade -y -qq > /dev/null
+apt-get update -y -qq > /dev/null
 apt-get -y -q install linux-headers-$(uname -r) build-essential > /dev/null
 
 #wget -P /tmp https://packages.chef.io/files/stable/chef-server/12.17.33/ubuntu/16.04/chef-server-core_12.17.33-1_amd64.deb > /dev/null
