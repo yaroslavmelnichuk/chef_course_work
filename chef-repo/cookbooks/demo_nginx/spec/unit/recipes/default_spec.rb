@@ -31,5 +31,22 @@ describe 'demo_nginx::default' do
     it 'converges successfully' do
       expect { chef_run }.to_not raise_error
     end
+    it 'installs nginx' do
+      expect(chef_run).to install_package 'nginx'
+    end
+
+    it 'enable the nginx service' do
+      expect(chef_run).to enable_service 'nginx'
+    end
+    it 'starts the nginx service' do
+      expect(chef_run).to start_service 'nginx'
+    end
+
+    it 'installs vim' do
+      expect(chef_run).to install_package 'vim'
+    end
+    it 'install tree' do
+      expect(chef_run).to install_package 'tree'
+    end
   end
 end
