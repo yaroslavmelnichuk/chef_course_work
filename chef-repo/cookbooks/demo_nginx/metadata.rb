@@ -4,7 +4,7 @@ maintainer_email 'you@example.com'
 license 'All Rights Reserved'
 description 'Installs/Configures demo_nginx'
 long_description 'Installs/Configures demo_nginx'
-version '0.1.0'
+version '0.1.1'
 chef_version '>= 12.14' if respond_to?(:chef_version)
 depends "apt"
 # The `issues_url` points to the location where issues for this cookbook are

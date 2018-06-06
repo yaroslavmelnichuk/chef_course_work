@@ -5,3 +5,4 @@ node_name                 "testlabdev"
 client_key                "#{current_dir}/testlabdev.pem"
 chef_server_url           "https://chef-server/organizations/testcheflab"
 cookbook_path             ["#{current_dir}/../cookbooks"]
+knife[:editor] = "/usr/bin/vim"
